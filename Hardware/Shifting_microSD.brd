@@ -91,6 +91,7 @@
 <layer number="112" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="113" name="IDFDebug" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="114" name="Badge_Outline" color="11" fill="1" visible="no" active="no"/>
+<layer number="115" name="ReferenceISLANDS" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
 <layer number="118" name="Rect_Pads" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
@@ -176,6 +177,7 @@
 <text x="10.2235" y="33.0835" size="1.778" layer="47" font="vector" ratio="15" align="center">All Units in Inches</text>
 <dimension x1="0" y1="0" x2="0" y2="25.146" x3="-1.6256" y3="12.573" textsize="1.778" textratio="15" layer="47" unit="inch"/>
 <dimension x1="0" y1="25.146" x2="18.288" y2="25.146" x3="9.144" y3="28.1178" textsize="1.778" textratio="15" layer="47" unit="inch"/>
+<text x="11.0236" y="24.765" size="0.8128" layer="16" font="vector" ratio="15" rot="MR0" align="top-center">&gt;VERSION</text>
 </plain>
 <libraries>
 <library name="SparkFun-Connectors">
@@ -212,6 +214,9 @@ We've spent an enormous amount of time creating and checking these footprints an
 <smd name="RSV2" x="-1.24" y="10.7" dx="0.8" dy="1.5" layer="1"/>
 <text x="-8.89" y="6.35" size="0.8128" layer="25">&gt;Name</text>
 <text x="-8.89" y="5.08" size="0.8128" layer="27">&gt;Value</text>
+<text x="0.635" y="15.875" size="1.27" layer="51" font="vector" ratio="10" align="center-left">Pressed</text>
+<text x="0.635" y="17.78" size="1.27" layer="51" font="vector" ratio="10" align="center-left">Locked</text>
+<text x="0.635" y="20.955" size="1.27" layer="51" font="vector" ratio="10" align="center-left">Unlocked</text>
 </package>
 <package name="1X07">
 <wire x1="14.605" y1="1.27" x2="15.875" y2="1.27" width="0.2032" layer="21"/>
@@ -604,11 +609,27 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <rectangle x1="1.016" y1="2.286" x2="1.524" y2="3.302" layer="51"/>
 <rectangle x1="2.286" y1="2.286" x2="2.794" y2="3.302" layer="51"/>
 <rectangle x1="3.556" y1="2.286" x2="4.064" y2="3.302" layer="51"/>
+<circle x="-4.572" y="-2.3114" radius="0.218496875" width="0" layer="21"/>
+</package>
+</packages>
+</library>
+<library name="SparkFun-Passives">
+<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
+In this library you'll find resistors, capacitors, inductors, test points, jumper pads, etc.&lt;br&gt;&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
+&lt;br&gt;&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="PAD.03X.03">
+<smd name="P$1" x="0" y="0" dx="0.762" dy="0.762" layer="1" roundness="100" cream="no"/>
 </package>
 </packages>
 </library>
 </libraries>
 <attributes>
+<attribute name="VERSION" value="v01"/>
 </attributes>
 <variantdefs>
 </variantdefs>
@@ -813,7 +834,7 @@ design rules under a new name.</description>
 </element>
 <element name="LOGO1" library="SparkFun-Aesthetics" package="SFE_LOGO_FLAME_.3" value="SFE_LOGO_FLAME.3_INCH" x="9.1059" y="15.3035" rot="MR0"/>
 <element name="LOGO2" library="SparkFun-Aesthetics" package="OSHW-LOGO-S" value="OSHW-LOGOS" x="12.7889" y="20.447" rot="MR0"/>
-<element name="U1" library="SparkFun-DigitalIC" package="SO14" value="" x="10.9474" y="9.3345" rot="MR180">
+<element name="U1" library="SparkFun-DigitalIC" package="SO14" value="TXB0104" x="10.9474" y="9.3345" rot="MR180">
 <attribute name="PROD_ID" value="IC-11329" x="10.9474" y="9.3345" size="1.778" layer="28" rot="MR180" display="off"/>
 </element>
 <element name="C3" library="SparkFun-Capacitors" package="0603-CAP" value="0.1uF" x="5.4229" y="7.366" rot="MR90">
@@ -826,6 +847,10 @@ design rules under a new name.</description>
 <element name="FID2" library="SparkFun-Aesthetics" package="FIDUCIAL-1X2" value="FIDUCIAL1X2" x="2.7686" y="3.2258" rot="MR0"/>
 <element name="FID3" library="SparkFun-Aesthetics" package="FIDUCIAL-1X2" value="FIDUCIAL1X2" x="17.272" y="24.13"/>
 <element name="FID4" library="SparkFun-Aesthetics" package="FIDUCIAL-1X2" value="FIDUCIAL1X2" x="2.7686" y="3.2258"/>
+<element name="R4" library="SparkFun-Resistors" package="0603-RES" value="100k" x="1.9558" y="18.6436" rot="MR0">
+<attribute name="PROD_ID" value="RES-07828" x="1.9558" y="18.6436" size="1.778" layer="28" rot="MR0" display="off"/>
+</element>
+<element name="TP1" library="SparkFun-Passives" package="PAD.03X.03" value="TEST-POINT3" x="1.1176" y="17.2466" rot="MR0"/>
 </elements>
 <signals>
 <signal name="CD">
@@ -861,6 +886,16 @@ design rules under a new name.</description>
 <wire x1="6.3754" y1="14.6685" x2="6.3754" y2="14.8082" width="0.254" layer="16"/>
 <wire x1="6.3754" y1="14.8082" x2="6.2611" y2="14.9225" width="0.254" layer="16"/>
 <wire x1="6.2611" y1="14.9225" x2="5.7531" y2="14.9225" width="0.254" layer="16"/>
+<contactref element="R4" pad="2"/>
+<wire x1="4.2647" y1="15.9686" x2="3.6656" y2="15.9686" width="0.254" layer="16"/>
+<wire x1="3.6656" y1="15.9686" x2="3.4036" y2="16.2306" width="0.254" layer="16"/>
+<wire x1="3.4036" y1="16.2306" x2="3.4036" y2="16.6624" width="0.254" layer="16"/>
+<wire x1="3.4036" y1="16.6624" x2="2.8194" y2="17.2466" width="0.254" layer="16"/>
+<wire x1="2.8194" y1="17.2466" x2="1.1312" y2="17.2466" width="0.254" layer="16"/>
+<contactref element="TP1" pad="P$1"/>
+<wire x1="1.1058" y1="18.6436" x2="1.1058" y2="17.272" width="0.254" layer="16"/>
+<wire x1="1.1312" y1="17.2466" x2="1.1058" y2="17.272" width="0.254" layer="16"/>
+<wire x1="1.1312" y1="17.2466" x2="1.1176" y2="17.2466" width="0.254" layer="16"/>
 </signal>
 <signal name="!CS_3V3">
 <contactref element="U1" pad="2"/>
@@ -869,6 +904,14 @@ design rules under a new name.</description>
 <wire x1="8.2509" y1="13.6144" x2="8.4074" y2="13.6144" width="0.254" layer="1"/>
 <via x="8.4074" y="13.6144" extent="1-16" drill="0.254"/>
 <wire x1="8.4074" y1="13.6144" x2="8.4074" y2="12.1345" width="0.254" layer="16"/>
+<contactref element="R4" pad="1"/>
+<wire x1="2.8058" y1="18.6436" x2="3.7964" y2="17.653" width="0.254" layer="16"/>
+<wire x1="3.7964" y1="17.653" x2="4.0132" y2="17.653" width="0.254" layer="16"/>
+<via x="4.0132" y="17.653" extent="1-16" drill="0.254"/>
+<wire x1="4.0132" y1="17.653" x2="5.1816" y2="18.8214" width="0.254" layer="1"/>
+<wire x1="5.1816" y1="18.8214" x2="7.7978" y2="18.8214" width="0.254" layer="1"/>
+<wire x1="7.7978" y1="18.8214" x2="8.2509" y2="18.3683" width="0.254" layer="1"/>
+<wire x1="8.2509" y1="18.3683" x2="8.2509" y2="17.0945" width="0.254" layer="1"/>
 </signal>
 <signal name="DI_3V3">
 <contactref element="U1" pad="3"/>
@@ -948,6 +991,7 @@ design rules under a new name.</description>
 <via x="10.16" y="3.7084" extent="1-16" drill="0.254"/>
 <via x="0.7366" y="10.4775" extent="1-16" drill="0.254"/>
 <via x="3.3528" y="12.2809" extent="1-16" drill="0.254"/>
+<via x="12.319" y="15.2527" extent="1-16" drill="0.254"/>
 </signal>
 <signal name="VDD_IO">
 <contactref element="C1" pad="1"/>
@@ -1030,31 +1074,31 @@ design rules under a new name.</description>
 </signal>
 </signals>
 <errors>
-<approved hash="7,40,038a614d851f9fac"/>
 <approved hash="7,40,b417e10a855aa84f"/>
 <approved hash="7,40,838a56a832fd284f"/>
+<approved hash="7,40,038a614d851f9fac"/>
 <approved hash="7,40,419481530153c194"/>
 <approved hash="7,40,8be1cba24ba20be1"/>
 <approved hash="18,30,b6d9808e91f62597"/>
-<approved hash="18,30,2a62efb578bee127"/>
 <approved hash="18,30,95c9520b2a5663ba"/>
+<approved hash="18,30,2a62efb578bee127"/>
 <approved hash="18,30,1dc6aca5c70a2d9b"/>
 <approved hash="18,30,202b011901042036"/>
-<approved hash="18,30,719fb605567e8316"/>
-<approved hash="18,30,4564bc635499af65"/>
-<approved hash="18,30,b60cbc6354985ff9"/>
-<approved hash="18,30,9993aacb46bcb791"/>
+<approved hash="18,30,55251035012f0a66"/>
 <approved hash="18,30,fa30ed02ed03fa31"/>
 <approved hash="18,30,1f6b65325365bce4"/>
-<approved hash="18,30,55251035012f0a66"/>
+<approved hash="18,30,b7b0a954362ca6d6"/>
+<approved hash="18,30,9993aacb46bcb791"/>
+<approved hash="18,30,e50fbf19c3c96aac"/>
 <approved hash="18,30,b99fb5cef3a461e7"/>
 <approved hash="18,30,9a45e977e9449a76"/>
-<approved hash="18,30,b7b0a954362ca6d6"/>
-<approved hash="18,30,e50fbf19c3c96aac"/>
+<approved hash="18,30,4564bc635499af65"/>
+<approved hash="18,30,719fb605567e8316"/>
+<approved hash="18,30,b60cbc6354985ff9"/>
+<approved hash="18,30,e638f10af100e632"/>
+<approved hash="18,30,8be4f481f5e12146"/>
 <approved hash="18,30,7e9a612c54c6954f"/>
 <approved hash="18,30,cb1970eaad4061c1"/>
-<approved hash="18,30,8be4f481f5e12146"/>
-<approved hash="18,30,e638f10af100e632"/>
 <approved hash="18,30,bfdb42b2efb1dcd7"/>
 <approved hash="18,30,e7109f86de95f016"/>
 <approved hash="18,30,75049441451102cd"/>
@@ -1066,33 +1110,33 @@ design rules under a new name.</description>
 <approved hash="18,30,aea21cd7706bbcac"/>
 <approved hash="18,30,8690f30298ca6f4e"/>
 <approved hash="18,30,db03e77e15651f16"/>
-<approved hash="18,30,eb689162e1a199b6"/>
 <approved hash="18,30,e1cc94b498dd9fb0"/>
-<approved hash="18,30,7f4b1f7624175a3c"/>
-<approved hash="18,30,ed04d9b4ddbdfa95"/>
+<approved hash="18,30,eb689162e1a199b6"/>
 <approved hash="18,30,69471af425fb585a"/>
+<approved hash="18,30,7f4b1f7624175a3c"/>
 <approved hash="18,30,f34795366121155f"/>
+<approved hash="18,30,ed04d9b4ddbdfa95"/>
 <approved hash="18,30,49f1b3f9980a1c08"/>
-<approved hash="18,30,480cca4eca006802"/>
+<approved hash="18,30,b4a05edd158f7681"/>
 <approved hash="18,30,384bea08ea39185b"/>
+<approved hash="18,30,480cca4eca006802"/>
 <approved hash="18,30,8a2b1d191d0d8a3f"/>
 <approved hash="18,30,9a18792a7edd9def"/>
-<approved hash="18,30,b4a05edd158f7681"/>
 <approved hash="5,1,569be1dcddd3449b"/>
 <approved hash="5,1,5093e75835573d9a"/>
 <approved hash="5,16,4671da9f152a302b"/>
 <approved hash="5,16,773de6afe567d5f0"/>
 <approved hash="5,16,086d9d41eebcce78"/>
 <approved hash="5,16,f28736740951d37b"/>
-<approved hash="5,16,25c9dd69e4da3841"/>
 <approved hash="5,16,059a2f69e4da384c"/>
+<approved hash="5,16,25c9dd69e4da3841"/>
 <approved hash="5,16,b3dee090f7f14a06"/>
-<approved hash="5,16,96351b225e1bbabe"/>
 <approved hash="5,16,43c3ae57a1a04b70"/>
+<approved hash="5,16,96351b225e1bbabe"/>
 <approved hash="5,16,eaae64fba4988fdb"/>
 <approved hash="5,16,41d5db835ee9c0b0"/>
-<approved hash="5,16,0cc22d8d5de4cb86"/>
 <approved hash="5,16,16c37b556b41b7d4"/>
+<approved hash="5,16,0cc22d8d5de4cb86"/>
 <approved hash="5,16,38d1330b53a8df74"/>
 </errors>
 </board>

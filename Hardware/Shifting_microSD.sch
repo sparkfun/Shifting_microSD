@@ -91,6 +91,7 @@
 <layer number="112" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="113" name="IDFDebug" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="114" name="Badge_Outline" color="11" fill="1" visible="no" active="no"/>
+<layer number="115" name="ReferenceISLANDS" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
 <layer number="118" name="Rect_Pads" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
@@ -187,6 +188,9 @@ We've spent an enormous amount of time creating and checking these footprints an
 <smd name="RSV2" x="-1.24" y="10.7" dx="0.8" dy="1.5" layer="1"/>
 <text x="-8.89" y="6.35" size="0.8128" layer="25">&gt;Name</text>
 <text x="-8.89" y="5.08" size="0.8128" layer="27">&gt;Value</text>
+<text x="0.635" y="15.875" size="1.27" layer="51" font="vector" ratio="10" align="center-left">Pressed</text>
+<text x="0.635" y="17.78" size="1.27" layer="51" font="vector" ratio="10" align="center-left">Locked</text>
+<text x="0.635" y="20.955" size="1.27" layer="51" font="vector" ratio="10" align="center-left">Unlocked</text>
 </package>
 <package name="1X07">
 <wire x1="14.605" y1="1.27" x2="15.875" y2="1.27" width="0.2032" layer="21"/>
@@ -8038,6 +8042,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <rectangle x1="1.016" y1="2.286" x2="1.524" y2="3.302" layer="51"/>
 <rectangle x1="2.286" y1="2.286" x2="2.794" y2="3.302" layer="51"/>
 <rectangle x1="3.556" y1="2.286" x2="4.064" y2="3.302" layer="51"/>
+<circle x="-4.572" y="-2.3114" radius="0.218496875" width="0" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -8100,7 +8105,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <connect gate="G$1" pin="VCCB" pad="14"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="PROD_ID" value="IC-11329" constant="no"/>
+<attribute name="VALUE" value="TXB0104"/>
+</technology>
 </technologies>
 </device>
 <device name="SOIC14" package="SO14">
@@ -8122,6 +8130,92 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <technology name="">
 <attribute name="PROD_ID" value="IC-11329"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="SparkFun-Passives">
+<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
+In this library you'll find resistors, capacitors, inductors, test points, jumper pads, etc.&lt;br&gt;&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
+&lt;br&gt;&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="PAD.02X.02">
+<smd name="P$1" x="0" y="0" dx="0.508" dy="0.508" layer="1"/>
+</package>
+<package name="PAD.03X.03">
+<smd name="P$1" x="0" y="0" dx="0.762" dy="0.762" layer="1" roundness="100" cream="no"/>
+</package>
+<package name="PAD.03X.05">
+<smd name="P$1" x="0" y="0" dx="1.27" dy="1.27" layer="1" roundness="100" cream="no"/>
+</package>
+<package name="PAD.03X.04">
+<smd name="P$1" x="0" y="0" dx="1.016" dy="1.016" layer="1" roundness="100" cream="no"/>
+</package>
+<package name="TP_15TH">
+<pad name="P$1" x="0" y="0" drill="0.381" diameter="0.6096" stop="no"/>
+<circle x="0" y="0" radius="0.381" width="0" layer="30"/>
+</package>
+</packages>
+<symbols>
+<symbol name="TEST-POINT">
+<wire x1="2.54" y1="0" x2="0" y2="0" width="0.1524" layer="94"/>
+<wire x1="3.302" y1="0.762" x2="3.302" y2="-0.762" width="0.1524" layer="94" curve="180"/>
+<text x="-2.54" y="2.54" size="1.778" layer="95">&gt;Name</text>
+<text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;Value</text>
+<pin name="1" x="0" y="0" visible="off" length="point" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="TEST-POINT" prefix="TP">
+<description>Bare copper test points for troubleshooting or ICT</description>
+<gates>
+<gate name="G$1" symbol="TEST-POINT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="2" package="PAD.02X.02">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="3" package="PAD.03X.03">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="3X5" package="PAD.03X.05">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="3X4" package="PAD.03X.04">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="TP_15TH_THRU" package="TP_15TH">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -8158,7 +8252,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND1" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="LOGO1" library="SparkFun-Aesthetics" deviceset="SFE_LOGO_FLAME" device=".3_INCH"/>
 <part name="LOGO2" library="SparkFun-Aesthetics" deviceset="OSHW-LOGO" device="S"/>
-<part name="U1" library="SparkFun-DigitalIC" deviceset="TXB0104PWR" device="SOIC14"/>
+<part name="U1" library="SparkFun-DigitalIC" deviceset="TXB0104PWR" device="SOIC14" value="TXB0104"/>
 <part name="SUPPLY14" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="SUPPLY15" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="GND5" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -8172,6 +8266,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="FID2" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="1X2"/>
 <part name="FID3" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="1X2"/>
 <part name="FID4" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="1X2"/>
+<part name="R4" library="SparkFun-Resistors" deviceset="100KOHM-1/10W-1%(0603)" device="" value="100k"/>
+<part name="TP1" library="SparkFun-Passives" deviceset="TEST-POINT" device="3"/>
 </parts>
 <sheets>
 <sheet>
@@ -8199,7 +8295,7 @@ PULL-UP RESISTORS</text>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
 <instance part="FRAME1" gate="V" x="147.32" y="0"/>
 <instance part="J1" gate="1" x="154.94" y="114.3"/>
-<instance part="SUPPLY2" gate="G$1" x="137.16" y="121.92"/>
+<instance part="SUPPLY2" gate="G$1" x="137.16" y="134.62"/>
 <instance part="GND3" gate="1" x="152.4" y="91.44"/>
 <instance part="R1" gate="G$1" x="180.34" y="119.38"/>
 <instance part="R2" gate="G$1" x="187.96" y="114.3"/>
@@ -8208,7 +8304,7 @@ PULL-UP RESISTORS</text>
 <instance part="SUPPLY3" gate="G$1" x="195.58" y="121.92"/>
 <instance part="U2" gate="G$1" x="40.64" y="33.02"/>
 <instance part="GND2" gate="1" x="27.94" y="15.24"/>
-<instance part="SUPPLY4" gate="G$1" x="50.8" y="40.64"/>
+<instance part="SUPPLY4" gate="G$1" x="50.8" y="43.18"/>
 <instance part="SUPPLY9" gate="G$1" x="25.4" y="40.64"/>
 <instance part="C1" gate="G$1" x="25.4" y="25.4" rot="MR0"/>
 <instance part="C2" gate="G$1" x="50.8" y="30.48"/>
@@ -8231,6 +8327,8 @@ PULL-UP RESISTORS</text>
 <instance part="FID2" gate="G$1" x="246.38" y="25.4"/>
 <instance part="FID3" gate="G$1" x="243.84" y="27.432"/>
 <instance part="FID4" gate="G$1" x="243.84" y="30.734"/>
+<instance part="R4" gate="G$1" x="129.54" y="124.46" rot="R90"/>
+<instance part="TP1" gate="G$1" x="55.88" y="40.64"/>
 </instances>
 <busses>
 </busses>
@@ -8252,7 +8350,12 @@ PULL-UP RESISTORS</text>
 <pinref part="J1" gate="1" pin="VCC"/>
 <pinref part="SUPPLY2" gate="G$1" pin="3.3V"/>
 <wire x1="139.7" y1="119.38" x2="137.16" y2="119.38" width="0.1524" layer="91"/>
-<wire x1="137.16" y1="119.38" x2="137.16" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="119.38" x2="137.16" y2="132.08" width="0.1524" layer="91"/>
+<pinref part="R4" gate="G$1" pin="2"/>
+<wire x1="137.16" y1="132.08" x2="137.16" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="129.54" x2="129.54" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="132.08" x2="137.16" y2="132.08" width="0.1524" layer="91"/>
+<junction x="137.16" y="132.08"/>
 </segment>
 <segment>
 <wire x1="195.58" y1="114.3" x2="195.58" y2="119.38" width="0.1524" layer="91"/>
@@ -8270,15 +8373,23 @@ PULL-UP RESISTORS</text>
 <pinref part="SUPPLY4" gate="G$1" pin="3.3V"/>
 <wire x1="50.8" y1="38.1" x2="50.8" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="C2" gate="G$1" pin="1"/>
+<wire x1="50.8" y1="40.64" x2="50.8" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="38.1" x2="50.8" y2="35.56" width="0.1524" layer="91"/>
 <junction x="50.8" y="38.1"/>
+<pinref part="TP1" gate="G$1" pin="1"/>
+<wire x1="55.88" y1="40.64" x2="50.8" y2="40.64" width="0.1524" layer="91"/>
+<junction x="50.8" y="40.64"/>
 </segment>
 </net>
 <net name="!CS_3V3" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="A1"/>
-<wire x1="139.7" y1="116.84" x2="119.38" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="116.84" x2="129.54" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="J1" gate="1" pin="!CS"/>
+<pinref part="R4" gate="G$1" pin="1"/>
+<wire x1="129.54" y1="116.84" x2="119.38" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="119.38" x2="129.54" y2="116.84" width="0.1524" layer="91"/>
+<junction x="129.54" y="116.84"/>
 </segment>
 </net>
 <net name="DI_3V3" class="0">
