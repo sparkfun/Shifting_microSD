@@ -8288,8 +8288,7 @@ TBX0104 </text>
 <wire x1="147.32" y1="58.42" x2="147.32" y2="35.56" width="0.1524" layer="97" style="shortdash"/>
 <wire x1="73.66" y1="58.42" x2="73.66" y2="0" width="0.1524" layer="97" style="shortdash"/>
 <text x="38.1" y="10.16" size="1.778" layer="97" font="vector" ratio="15" align="center">+3.3V LINEAR REGULATOR</text>
-<text x="111.76" y="10.16" size="1.778" layer="97" font="vector" ratio="15" align="center">LEVEL TRANSLATOR
-PULL-UP RESISTORS</text>
+<text x="111.76" y="10.16" size="1.778" layer="97" font="vector" ratio="15" align="center">BYPASS CAPS</text>
 <text x="170.18" y="128.524" size="1.016" layer="97" font="vector">100KΩ is the max Sandisk recommends</text>
 <text x="33.782" y="19.05" size="1.016" layer="97" font="vector">250mV dropout</text>
 </plain>
