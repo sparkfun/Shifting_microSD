@@ -177,7 +177,7 @@
 <text x="10.2235" y="33.0835" size="1.778" layer="47" font="vector" ratio="15" align="center">All Units in Inches</text>
 <dimension x1="0" y1="0" x2="0" y2="25.146" x3="-1.6256" y3="12.573" textsize="1.778" textratio="15" layer="47" unit="inch"/>
 <dimension x1="0" y1="25.146" x2="18.288" y2="25.146" x3="9.144" y3="28.1178" textsize="1.778" textratio="15" layer="47" unit="inch"/>
-<text x="11.0236" y="24.765" size="0.8128" layer="16" font="vector" ratio="15" rot="MR0" align="top-center">&gt;VERSION</text>
+<text x="11.0236" y="24.765" size="1.016" layer="16" font="vector" ratio="18" rot="MR0" align="top-center">&gt;VERSION</text>
 </plain>
 <libraries>
 <library name="SparkFun-Connectors">
@@ -1084,44 +1084,44 @@ design rules under a new name.</description>
 <approved hash="18,30,2a62efb578bee127"/>
 <approved hash="18,30,1dc6aca5c70a2d9b"/>
 <approved hash="18,30,202b011901042036"/>
-<approved hash="18,30,55251035012f0a66"/>
 <approved hash="18,30,fa30ed02ed03fa31"/>
-<approved hash="18,30,1f6b65325365bce4"/>
 <approved hash="18,30,b7b0a954362ca6d6"/>
+<approved hash="18,30,55251035012f0a66"/>
 <approved hash="18,30,9993aacb46bcb791"/>
-<approved hash="18,30,e50fbf19c3c96aac"/>
-<approved hash="18,30,b99fb5cef3a461e7"/>
 <approved hash="18,30,9a45e977e9449a76"/>
+<approved hash="18,30,b99fb5cef3a461e7"/>
+<approved hash="18,30,1f6b65325365bce4"/>
+<approved hash="18,30,e50fbf19c3c96aac"/>
 <approved hash="18,30,4564bc635499af65"/>
-<approved hash="18,30,719fb605567e8316"/>
 <approved hash="18,30,b60cbc6354985ff9"/>
+<approved hash="18,30,719fb605567e8316"/>
 <approved hash="18,30,e638f10af100e632"/>
-<approved hash="18,30,8be4f481f5e12146"/>
-<approved hash="18,30,7e9a612c54c6954f"/>
 <approved hash="18,30,cb1970eaad4061c1"/>
+<approved hash="18,30,7e9a612c54c6954f"/>
+<approved hash="18,30,8be4f481f5e12146"/>
 <approved hash="18,30,bfdb42b2efb1dcd7"/>
 <approved hash="18,30,e7109f86de95f016"/>
 <approved hash="18,30,75049441451102cd"/>
-<approved hash="18,30,66f496f9d279040d"/>
 <approved hash="18,30,b0fbb3b60861d956"/>
+<approved hash="18,30,66f496f9d279040d"/>
 <approved hash="18,30,4bf0095adca22276"/>
 <approved hash="18,30,2e1b376937462e34"/>
-<approved hash="18,30,feb3b55752897473"/>
-<approved hash="18,30,aea21cd7706bbcac"/>
 <approved hash="18,30,8690f30298ca6f4e"/>
 <approved hash="18,30,db03e77e15651f16"/>
-<approved hash="18,30,e1cc94b498dd9fb0"/>
+<approved hash="18,30,feb3b55752897473"/>
+<approved hash="18,30,aea21cd7706bbcac"/>
 <approved hash="18,30,eb689162e1a199b6"/>
+<approved hash="18,30,e1cc94b498dd9fb0"/>
 <approved hash="18,30,69471af425fb585a"/>
+<approved hash="18,30,ed04d9b4ddbdfa95"/>
 <approved hash="18,30,7f4b1f7624175a3c"/>
 <approved hash="18,30,f34795366121155f"/>
-<approved hash="18,30,ed04d9b4ddbdfa95"/>
 <approved hash="18,30,49f1b3f9980a1c08"/>
-<approved hash="18,30,b4a05edd158f7681"/>
 <approved hash="18,30,384bea08ea39185b"/>
 <approved hash="18,30,480cca4eca006802"/>
 <approved hash="18,30,8a2b1d191d0d8a3f"/>
 <approved hash="18,30,9a18792a7edd9def"/>
+<approved hash="18,30,b4a05edd158f7681"/>
 <approved hash="5,1,569be1dcddd3449b"/>
 <approved hash="5,1,5093e75835573d9a"/>
 <approved hash="5,16,4671da9f152a302b"/>
