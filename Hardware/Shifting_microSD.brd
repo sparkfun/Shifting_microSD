@@ -9,20 +9,6 @@
 <grid distance="0.001" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.001" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
-<layer number="3" name="Route3" color="4" fill="3" visible="yes" active="yes"/>
-<layer number="4" name="Route4" color="1" fill="4" visible="yes" active="yes"/>
-<layer number="5" name="Route5" color="4" fill="4" visible="yes" active="yes"/>
-<layer number="6" name="Route6" color="1" fill="8" visible="yes" active="yes"/>
-<layer number="7" name="Route7" color="4" fill="8" visible="yes" active="yes"/>
-<layer number="8" name="Route8" color="1" fill="2" visible="yes" active="yes"/>
-<layer number="9" name="Route9" color="4" fill="2" visible="yes" active="yes"/>
-<layer number="10" name="Route10" color="1" fill="7" visible="yes" active="yes"/>
-<layer number="11" name="Route11" color="4" fill="7" visible="yes" active="yes"/>
-<layer number="12" name="Route12" color="1" fill="5" visible="yes" active="yes"/>
-<layer number="13" name="Route13" color="4" fill="5" visible="yes" active="yes"/>
-<layer number="14" name="Route14" color="1" fill="6" visible="yes" active="yes"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
@@ -629,7 +615,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </library>
 </libraries>
 <attributes>
-<attribute name="VERSION" value="v01"/>
+<attribute name="VERSION" value="v02"/>
 </attributes>
 <variantdefs>
 </variantdefs>
@@ -896,6 +882,16 @@ design rules under a new name.</description>
 <wire x1="1.1058" y1="18.6436" x2="1.1058" y2="17.272" width="0.254" layer="16"/>
 <wire x1="1.1312" y1="17.2466" x2="1.1058" y2="17.272" width="0.254" layer="16"/>
 <wire x1="1.1312" y1="17.2466" x2="1.1176" y2="17.2466" width="0.254" layer="16"/>
+<contactref element="U1" pad="8"/>
+<contactref element="U1" pad="1"/>
+<wire x1="7.1374" y1="13.628" x2="7.1374" y2="12.1345" width="0.254" layer="16"/>
+<wire x1="14.8209" y1="13.628" x2="14.1224" y2="13.628" width="0.254" layer="16"/>
+<wire x1="14.1224" y1="13.628" x2="14.1224" y2="9.779" width="0.254" layer="16"/>
+<wire x1="14.1224" y1="9.779" x2="14.7574" y2="9.144" width="0.254" layer="16"/>
+<wire x1="14.7574" y1="9.144" x2="14.7574" y2="6.5345" width="0.254" layer="16"/>
+<contactref element="C4" pad="1"/>
+<wire x1="5.4229" y1="12.153" x2="7.1189" y2="12.153" width="0.254" layer="16"/>
+<wire x1="7.1189" y1="12.153" x2="7.1374" y2="12.1345" width="0.254" layer="16"/>
 </signal>
 <signal name="!CS_3V3">
 <contactref element="U1" pad="2"/>
@@ -1017,21 +1013,6 @@ design rules under a new name.</description>
 <wire x1="0.9563" y1="13.3684" x2="0.9525" y2="13.3722" width="0.254" layer="16"/>
 <wire x1="3.7084" y1="6.516" x2="4.8768" y2="6.516" width="0.254" layer="16"/>
 </signal>
-<signal name="3.3V">
-<contactref element="U1" pad="1"/>
-<contactref element="C4" pad="1"/>
-<contactref element="U1" pad="8"/>
-<wire x1="5.4229" y1="12.153" x2="7.1189" y2="12.153" width="0.254" layer="16"/>
-<wire x1="7.1189" y1="12.153" x2="7.1374" y2="12.1345" width="0.254" layer="16"/>
-<wire x1="7.1374" y1="12.1345" x2="7.1374" y2="9.906" width="0.254" layer="16"/>
-<wire x1="7.1374" y1="9.906" x2="7.7089" y2="9.3345" width="0.254" layer="16"/>
-<wire x1="7.7089" y1="9.3345" x2="12.7254" y2="9.3345" width="0.254" layer="16"/>
-<wire x1="14.7574" y1="8.6995" x2="14.7574" y2="6.5345" width="0.254" layer="16"/>
-<via x="12.7254" y="9.3345" extent="1-16" drill="0.254"/>
-<wire x1="12.7254" y1="9.3345" x2="14.1224" y2="9.3345" width="0.254" layer="1"/>
-<wire x1="14.1224" y1="9.3345" x2="14.7574" y2="8.6995" width="0.254" layer="1"/>
-<via x="14.7574" y="8.6995" extent="1-16" drill="0.254"/>
-</signal>
 <signal name="SCK_3V3">
 <contactref element="J1" pad="SCLK"/>
 <contactref element="U1" pad="4"/>
@@ -1128,15 +1109,15 @@ design rules under a new name.</description>
 <approved hash="5,16,773de6afe567d5f0"/>
 <approved hash="5,16,086d9d41eebcce78"/>
 <approved hash="5,16,f28736740951d37b"/>
-<approved hash="5,16,059a2f69e4da384c"/>
 <approved hash="5,16,25c9dd69e4da3841"/>
+<approved hash="5,16,059a2f69e4da384c"/>
 <approved hash="5,16,b3dee090f7f14a06"/>
-<approved hash="5,16,43c3ae57a1a04b70"/>
 <approved hash="5,16,96351b225e1bbabe"/>
+<approved hash="5,16,43c3ae57a1a04b70"/>
 <approved hash="5,16,eaae64fba4988fdb"/>
 <approved hash="5,16,41d5db835ee9c0b0"/>
-<approved hash="5,16,16c37b556b41b7d4"/>
 <approved hash="5,16,0cc22d8d5de4cb86"/>
+<approved hash="5,16,16c37b556b41b7d4"/>
 <approved hash="5,16,38d1330b53a8df74"/>
 </errors>
 </board>

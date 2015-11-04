@@ -8273,7 +8273,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <sheet>
 <plain>
 <text x="166.116" y="11.43" size="2.54" layer="94">Brent Wilkins</text>
-<text x="236.22" y="7.62" size="2.54" layer="94" font="vector">v01</text>
+<text x="236.22" y="7.62" size="2.54" layer="94" font="vector">v02</text>
 <text x="121.92" y="172.72" size="1.778" layer="97" font="vector" ratio="15" align="center">VCC +3.3V to +5.0V
 EXPECT UP TO VCC ON SIGNAL LINES</text>
 <text x="170.688" y="123.444" size="1.016" layer="97" font="vector">Remove shootthrough current
@@ -8380,6 +8380,22 @@ TBX0104 </text>
 <pinref part="TP1" gate="G$1" pin="1"/>
 <wire x1="55.88" y1="40.64" x2="50.8" y2="40.64" width="0.1524" layer="91"/>
 <junction x="50.8" y="40.64"/>
+</segment>
+<segment>
+<pinref part="SUPPLY14" gate="G$1" pin="3.3V"/>
+<pinref part="U1" gate="G$1" pin="VCCA"/>
+<wire x1="109.22" y1="137.16" x2="109.22" y2="134.62" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="OE"/>
+<wire x1="109.22" y1="134.62" x2="109.22" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="121.92" x2="121.92" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="121.92" x2="121.92" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="134.62" x2="109.22" y2="134.62" width="0.1524" layer="91"/>
+<junction x="109.22" y="134.62"/>
+</segment>
+<segment>
+<pinref part="C4" gate="G$1" pin="1"/>
+<pinref part="SUPPLY5" gate="G$1" pin="3.3V"/>
+<wire x1="119.38" y1="38.1" x2="119.38" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="!CS_3V3" class="0">
@@ -8510,24 +8526,6 @@ TBX0104 </text>
 <pinref part="C3" gate="G$1" pin="1"/>
 <pinref part="SUPPLY1" gate="G$1" pin="VCC"/>
 <wire x1="104.14" y1="40.64" x2="104.14" y2="38.1" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="3.3V" class="0">
-<segment>
-<pinref part="SUPPLY14" gate="G$1" pin="3.3V"/>
-<pinref part="U1" gate="G$1" pin="VCCA"/>
-<wire x1="109.22" y1="137.16" x2="109.22" y2="134.62" width="0.1524" layer="91"/>
-<pinref part="U1" gate="G$1" pin="OE"/>
-<wire x1="109.22" y1="134.62" x2="109.22" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="121.92" x2="121.92" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="121.92" x2="121.92" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="134.62" x2="109.22" y2="134.62" width="0.1524" layer="91"/>
-<junction x="109.22" y="134.62"/>
-</segment>
-<segment>
-<pinref part="C4" gate="G$1" pin="1"/>
-<pinref part="SUPPLY5" gate="G$1" pin="3.3V"/>
-<wire x1="119.38" y1="38.1" x2="119.38" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SCK_3V3" class="0">
