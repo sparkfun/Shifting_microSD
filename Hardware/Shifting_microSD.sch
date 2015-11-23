@@ -8273,7 +8273,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <sheet>
 <plain>
 <text x="166.116" y="11.43" size="2.54" layer="94">Brent Wilkins</text>
-<text x="236.22" y="7.62" size="2.54" layer="94" font="vector">v02</text>
+<text x="236.22" y="7.62" size="2.54" layer="94" font="vector">v10</text>
 <text x="121.92" y="172.72" size="1.778" layer="97" font="vector" ratio="15" align="center">VCC +3.3V to +5.0V
 EXPECT UP TO VCC ON SIGNAL LINES</text>
 <text x="170.688" y="123.444" size="1.016" layer="97" font="vector">Remove shootthrough current
