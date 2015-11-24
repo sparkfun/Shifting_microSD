@@ -859,14 +859,14 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <contactref element="R2" pad="2"/>
 <contactref element="U2" pad="5"/>
 <contactref element="C2" pad="1"/>
-<wire x1="14.5669" y1="13.374" x2="13.0547" y2="13.374" width="0.254" layer="16"/>
-<wire x1="12.192" y1="14.2367" x2="10.1854" y2="14.2367" width="0.254" layer="16"/>
+<wire x1="12.2428" y1="14.2367" x2="10.1854" y2="14.2367" width="0.254" layer="16"/>
 <via x="10.1854" y="14.2367" extent="1-16" drill="0.381"/>
 <wire x1="10.1854" y1="14.2367" x2="10.1854" y2="17.429" width="0.254" layer="1"/>
 <wire x1="10.1854" y1="17.429" x2="10.1969" y2="17.4405" width="0.254" layer="1"/>
 <wire x1="10.1727" y1="14.224" x2="10.1854" y2="14.2367" width="0.254" layer="16"/>
-<wire x1="12.192" y1="14.2367" x2="13.0547" y2="13.374" width="0.254" layer="16"/>
+<wire x1="12.2428" y1="14.2367" x2="13.51915" y2="12.96035" width="0.254" layer="16"/>
 <contactref element="R4" pad="2"/>
+<wire x1="13.51915" y1="12.96035" x2="13.8684" y2="12.6111" width="0.254" layer="16"/>
 <wire x1="4.0107" y1="15.7146" x2="3.4116" y2="15.7146" width="0.254" layer="16"/>
 <wire x1="3.4116" y1="15.7146" x2="3.1496" y2="15.9766" width="0.254" layer="16"/>
 <wire x1="3.1496" y1="15.9766" x2="3.1496" y2="16.4084" width="0.254" layer="16"/>
@@ -876,7 +876,6 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <contactref element="U1" pad="1"/>
 <wire x1="6.8834" y1="13.374" x2="6.8834" y2="11.8805" width="0.254" layer="16"/>
 <wire x1="14.5669" y1="13.374" x2="13.8684" y2="13.374" width="0.254" layer="16"/>
-<wire x1="13.8684" y1="13.374" x2="13.8684" y2="9.525" width="0.254" layer="16"/>
 <wire x1="13.8684" y1="9.525" x2="14.5034" y2="8.89" width="0.254" layer="16"/>
 <wire x1="14.5034" y1="8.89" x2="14.5034" y2="6.2805" width="0.254" layer="16"/>
 <contactref element="C4" pad="1"/>
@@ -890,6 +889,9 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <wire x1="0.9026" y1="18.3896" x2="0.9144" y2="18.3896" width="0.254" layer="16"/>
 <wire x1="0.9144" y1="18.3896" x2="0.9144" y2="16.9926" width="0.254" layer="16"/>
 <wire x1="0.9144" y1="16.9926" x2="2.5654" y2="16.9926" width="0.254" layer="16"/>
+<wire x1="13.8684" y1="9.525" x2="13.8684" y2="12.6111" width="0.254" layer="16"/>
+<wire x1="13.8684" y1="13.374" x2="13.51915" y2="13.02475" width="0.254" layer="16"/>
+<wire x1="13.51915" y1="13.02475" x2="13.51915" y2="12.96035" width="0.254" layer="16"/>
 </signal>
 <signal name="!CS_3V3">
 <contactref element="U1" pad="2"/>
