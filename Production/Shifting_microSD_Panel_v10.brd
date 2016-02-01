@@ -58,7 +58,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="3" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="51" name="tDocu" color="6" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -5928,6 +5928,9 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <element name="E$4" library="SparkFun-Aesthetics" package="FIDUCIAL-1X2" value="" x="117.602" y="245.237" rot="R90"/>
 <element name="E$1" library="SparkFun-Aesthetics" package="FIDUCIAL-1X2" value="" x="117.602" y="13.081" rot="R90"/>
 <element name="E$2" library="SparkFun-Retired" package="FIDUCIAL-1.5X3" value="" x="4.572" y="14.732"/>
+<element name="E$3" library="SparkFun-Retired" package="FIDUCIAL-1.5X3" value="" x="4.572" y="14.732" rot="MR0"/>
+<element name="E$5" library="SparkFun-Aesthetics" package="FIDUCIAL-1X2" value="" x="117.602" y="13.081" rot="MR90"/>
+<element name="E$6" library="SparkFun-Aesthetics" package="FIDUCIAL-1X2" value="" x="117.602" y="245.237" rot="MR90"/>
 </elements>
 <signals>
 <signal name="CD">
