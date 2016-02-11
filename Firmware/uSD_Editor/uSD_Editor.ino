@@ -1,3 +1,11 @@
+/*
+ * A simple file logger that allows the user to write to a file on the µSD card
+ * using the Arduino IDE Serial Monitor (57600 baud). Entered text is written
+ * to the µSD card every 20 characters, but to make sure everything is written
+ * append 'EOF' to your writing. Doing so writes everything remaining in the
+ * buffer to the file and reads back the contents of the file.
+ */
+
 #include <SPI.h>
 #include <SD.h>
 
@@ -17,6 +25,9 @@ bool alreadyBegan = false;  // SD.begin() misbehaves if not first call
 
 
 
+////////////////////////////////////////////////////////////////////////////////
+// Standard Arduino setup function
+////////////////////////////////////////////////////////////////////////////////
 void setup()
 {
   Serial.begin(57600);
@@ -31,6 +42,9 @@ void setup()
 
 
 
+////////////////////////////////////////////////////////////////////////////////
+// Arduino calls this function over and over again when running
+////////////////////////////////////////////////////////////////////////////////
 void loop()
 {
   // Make sure the card is still present
@@ -52,7 +66,9 @@ void loop()
 
 
 
+////////////////////////////////////////////////////////////////////////////////
 // Do everything from detecting card through opening the demo file
+////////////////////////////////////////////////////////////////////////////////
 void initializeCard(void)
 {
   Serial.print(F("Initializing SD card..."));
@@ -82,23 +98,24 @@ void initializeCard(void)
   if (SD.exists(fileName))
   {
     Serial.println(F(" exists."));
-    //Serial.flush();
   }
   else
   {
     Serial.println(F(" doesn't exist. Creating."));
-    //Serial.flush();
   }
   
   Serial.print("Opening file: ");
   Serial.println(fileName);
-  //fd = SD.open(fileName, FILE_WRITE);
 
   Serial.println(F("Enter text to be written to file. 'EOF' will terminate writing."));
 }
 
 
-
+////////////////////////////////////////////////////////////////////////////////
+// This function is called after the EOF command is received. It writes the
+// remaining unwritten data to the µSD card, and prints out the full contents
+// of the log file.
+////////////////////////////////////////////////////////////////////////////////
 void eof(void)
 {
   index -= 3; // Remove EOF from the end
@@ -126,7 +143,10 @@ void eof(void)
 }
 
 
-
+////////////////////////////////////////////////////////////////////////////////
+// Write the buffer to the log file. If we are possibly in the EOF state, verify
+// that to make sure the command isn't written to the file.
+////////////////////////////////////////////////////////////////////////////////
 void flushBuffer(void)
 {
   fd = SD.open(fileName, FILE_WRITE);
@@ -152,6 +172,10 @@ void flushBuffer(void)
 
 
 
+////////////////////////////////////////////////////////////////////////////////
+// Reads a byte from the serial connection. This also maintains the state to
+// capture the EOF command.
+////////////////////////////////////////////////////////////////////////////////
 void readByte(void)
 {
   byte byteRead = Serial.read();
