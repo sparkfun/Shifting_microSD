@@ -13,6 +13,7 @@ Repository Contents
 
 * **/Hardware** &mdash; All Eagle design files (.brd, .sch)
 * **/Firmware** &mdash; A trivial write only Arduino word processor.
+* **/Production** &mdash; Test bed files and production panel files
 
 Documentation
 --------------
